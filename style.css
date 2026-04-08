@@ -100,12 +100,12 @@ body {
     text-transform: uppercase;
 }
 
-.profile-img-container {
+/*.profile-img-container {
     border: 2px dashed #cbd5e1;
     display: flex;
     align-items: center;
     justify-content: center;
-    border-radius: 1rem;
+    border-radius: 1rem;*/
 }
 
 .book-cover {
