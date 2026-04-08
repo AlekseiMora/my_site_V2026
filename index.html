@@ -3,71 +3,93 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Aleksei Mora | Consultor & Autor</title>
+    <title>Aleksei Mora | Strategist & Author</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Playfair+Display:ital,wght@0,700;1,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;700&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
     <style>
-        body { font-family: 'Inter', sans-serif; }
-        .serif { font-family: 'Playfair Display', serif; }
+        body { font-family: 'Plus Jakarta Sans', sans-serif; }
+        .serif { font-family: 'Instrument Serif', serif; }
+        .bg-mesh {
+            background-color: #f8fafc;
+            background-image: radial-gradient(at 0% 0%, rgba(59, 130, 246, 0.05) 0px, transparent 50%),
+                              radial-gradient(at 100% 100%, rgba(16, 185, 129, 0.05) 0px, transparent 50%);
+        }
     </style>
 </head>
-<body class="bg-slate-50 text-slate-900 leading-relaxed">
+<body class="bg-mesh text-slate-900">
 
-    <nav class="max-w-5xl mx-auto px-6 py-12 flex justify-between items-center">
-        <span class="text-xl font-bold tracking-tighter">AM.</span>
-        <div class="space-x-6 text-sm font-medium uppercase tracking-widest text-slate-500">
-            <a href="#work" class="hover:text-black transition">Trayectoria</a>
-            <a href="#books" class="hover:text-black transition">Libros</a>
-            <a href="mailto:tu-email@ejemplo.com" class="hover:text-black transition">Contacto</a>
+    <nav class="max-w-6xl mx-auto px-8 py-8 flex justify-between items-center">
+        <div class="text-2xl serif italic font-bold tracking-tight">AM.</div>
+        <div class="flex gap-8 text-xs font-bold uppercase tracking-widest text-slate-400">
+            <a href="#pro" class="hover:text-blue-600 transition">Estrategia</a>
+            <a href="#author" class="hover:text-emerald-600 transition">Literatura</a>
+            <a href="mailto:your-email@example.com" class="text-slate-900 border-b-2 border-black">Contacto</a>
         </div>
     </nav>
 
-    <header class="max-w-5xl mx-auto px-6 py-20 border-b border-slate-200">
-        <h1 class="text-5xl md:text-7xl serif mb-8">
-            Estratega de <span class="italic">Marketing</span> & <br>Arquitecto de Historias.
+    <header class="max-w-6xl mx-auto px-8 py-24">
+        <h1 class="text-6xl md:text-8xl serif leading-none mb-10">
+            Arquitectura de <span class="italic text-blue-600">Sistemas</span>.<br>
+            Narrativa de <span class="italic text-emerald-600">Mundos</span>.
         </h1>
-        <p class="text-xl md:text-2xl text-slate-600 max-w-2xl font-light">
-            Especialista en automatización para Fintech y autor de la saga <span class="font-semibold text-slate-800 italic">"Era Natural"</span>. Basado en Chicago.
+        <p class="text-xl md:text-2xl text-slate-500 max-w-3xl leading-relaxed font-light">
+            Consultor de Marketing Automation especializado en <span class="text-slate-900 font-medium">Fintech</span> y autor de ciencia ficción. Transformo procesos complejos en experiencias humanas memorables.
         </p>
     </header>
 
-    <main class="max-w-5xl mx-auto px-6 py-20 grid grid-cols-1 md:grid-cols-2 gap-16">
+    <main class="max-w-6xl mx-auto px-8 pb-32 grid grid-cols-1 md:grid-cols-3 gap-6">
         
-        <section id="work">
-            <h2 class="text-xs uppercase tracking-[0.2em] text-slate-400 mb-8 font-bold">Experiencia Profesional</h2>
-            <div class="space-y-12">
-                <div>
-                    <h3 class="text-xl font-semibold">Consultoría & Marketing Automation</h3>
-                    <p class="text-slate-500 mt-2">Experto en plataformas como Braze, HubSpot y Salesforce. Optimizo flujos de retención y crecimiento para empresas del sector Fintech.</p>
-                </div>
-                <div>
-                    <h3 class="text-xl font-semibold">Operaciones Backend</h3>
-                    <p class="text-slate-500 mt-2">Sólida base técnica en procesos multicanal y resolución de problemas complejos en entornos dinámicos.</p>
-                </div>
+        <div id="pro" class="md:col-span-2 bg-white border border-slate-200 p-10 rounded-3xl shadow-sm hover:shadow-md transition">
+            <span class="text-blue-600 text-xs font-bold uppercase tracking-widest">Executive Profile</span>
+            <h2 class="text-3xl font-bold mt-4 mb-6">Optimización de Ecosistemas Digitales</h2>
+            <p class="text-slate-600 mb-8 text-lg">
+                Con background en operaciones de backend y marketing multicanal, ayudo a empresas a escalar mediante la implementación técnica de **Braze, HubSpot y Salesforce**. Mi enfoque no es solo la herramienta, sino la lógica del usuario final.
+            </p>
+            <div class="flex flex-wrap gap-3">
+                <span class="bg-slate-100 px-4 py-2 rounded-full text-sm font-medium">Fintech Ops</span>
+                <span class="bg-slate-100 px-4 py-2 rounded-full text-sm font-medium">CRM Strategy</span>
+                <span class="bg-slate-100 px-4 py-2 rounded-full text-sm font-medium">Python & Web Dev</span>
             </div>
-        </section>
+        </div>
 
-        <section id="books" class="bg-slate-900 text-white p-10 rounded-2xl">
-            <h2 class="text-xs uppercase tracking-[0.2em] text-slate-400 mb-8 font-bold">Mundo Literario</h2>
-            <div class="space-y-6">
-                <h3 class="text-3xl serif italic">Era Natural: Semillas</h3>
-                <p class="text-slate-300 font-light">
-                    Una exploración épica sobre la naturaleza humana y el destino en un mundo donde lo orgánico y lo tecnológico colisionan.
-                </p>
-                <div class="pt-4">
-                    <span class="text-sm border border-slate-700 px-4 py-2 rounded-full">+139,000 palabras escritas</span>
-                </div>
-                <button class="mt-8 w-full py-3 bg-white text-black font-bold rounded-lg hover:bg-slate-200 transition">
-                    Leer más sobre la saga
-                </button>
+        <div id="author" class="bg-slate-900 text-white p-10 rounded-3xl flex flex-col justify-between hover:scale-[1.02] transition duration-300">
+            <div>
+                <span class="text-emerald-400 text-xs font-bold uppercase tracking-widest">Literary Work</span>
+                <h2 class="text-4xl serif italic mt-4 mb-4">Era Natural: Semillas</h2>
+                <p class="text-slate-400 font-light italic">"Donde lo orgánico encuentra su límite tecnológico."</p>
             </div>
-        </section>
+            <div class="mt-12">
+                <p class="text-sm text-slate-500 mb-4 uppercase tracking-tighter">+139,000 Palabras escritas</p>
+                <div class="w-full bg-slate-800 h-1 rounded-full overflow-hidden">
+                    <div class="bg-emerald-500 h-full w-[85%]"></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="bg-blue-600 text-white p-10 rounded-3xl flex flex-col justify-center text-center">
+            <h3 class="text-lg font-bold mb-2">Certificaciones</h3>
+            <p class="text-blue-100 text-sm mb-6">Validación técnica global</p>
+            <ul class="space-y-2 text-sm font-bold">
+                <li class="bg-blue-700 py-2 rounded-lg">Braze Certified</li>
+                <li class="bg-blue-700 py-2 rounded-lg">HubSpot Automation</li>
+                <li class="bg-blue-700 py-2 rounded-lg">Salesforce MC</li>
+            </ul>
+        </div>
+
+        <div class="md:col-span-2 bg-emerald-50 border border-emerald-100 p-10 rounded-3xl flex items-center justify-between">
+            <div>
+                <h3 class="text-xl font-bold text-emerald-900">Basado en Chicago, IL</h3>
+                <p class="text-emerald-700">Abierto a consultoría estratégica y colaboraciones creativas.</p>
+            </div>
+            <div class="hidden md:block text-5xl opacity-20">🏙️</div>
+        </div>
 
     </main>
 
-    <footer class="max-w-5xl mx-auto px-6 py-20 text-center border-t border-slate-200">
-        <p class="text-slate-400 text-sm">© 2026 Aleksei Mora. Chicago, IL.</p>
+    <footer class="max-w-6xl mx-auto px-8 py-12 text-slate-400 text-xs flex justify-between border-t border-slate-200">
+        <p>© 2026 ALEKSEI MORA</p>
+        <p>CONSTRUIDO CON ESTRATEGIA & NARRATIVA</p>
     </footer>
 
 </body>
-</html> 
+</html>
