@@ -4,117 +4,84 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Aleksei Mora | Strategy & Narrative</title>
+    
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Playfair+Display:ital,wght@0,700;1,700&display=swap" rel="stylesheet">
-    <style>
-        :root {
-            --pro-blue: #0070ba; /* PayPal/Amex inspired Blue */
-            --author-bg: #0f172a;
-        }
-        body { font-family: 'Inter', sans-serif; overflow-x: hidden; }
-        .serif { font-family: 'Playfair Display', serif; }
-        
-        /* Split Screen logic for Desktop */
-        @media (min-width: 1024px) {
-            .split-container { display: flex; height: 100vh; overflow: hidden; }
-            .side { width: 50%; height: 100%; overflow-y: auto; padding: 4rem; }
-        }
-        
-        /* Image Placeholders */
-        .img-placeholder {
-            background: #e2e8f0;
-            border: 2px dashed #cbd5e1;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            border-radius: 1rem;
-            transition: all 0.3s ease;
-        }
-        .side-author .img-placeholder {
-            background: #1e293b;
-            border-color: #334155;
-        }
-    </style>
+    
+    <link rel="stylesheet" href="style.css">
 </head>
-<body class="bg-white">
+<body>
 
     <div class="split-container">
         
-        <section class="side side-pro bg-white border-r border-slate-100 p-8">
-            <header class="mb-12">
-                <span class="text-xs font-bold tracking-[0.3em] text-blue-600 uppercase">Management & Strategy</span>
-                <h1 class="text-4xl font-extrabold text-slate-900 mt-2">David Aleksei Mora</h1>
-                <p class="text-slate-500 mt-2 font-medium">Global Operations & Risk Leader [cite: 2, 5]</p>
+        <section class="side side-pro">
+            <header class="section-header">
+                <span class="label-blue">Management & Strategy</span>
+                <h1 class="main-title">David Aleksei Mora</h1>
+                <p class="subtitle">Global Operations & Risk Leader</p>
             </header>
 
-            <div class="img-placeholder w-32 h-32 mb-8 rounded-full overflow-hidden">
-                <span class="text-slate-400 text-xs">Profile Picture</span>
+            <div class="img-placeholder profile-img">
+                <span>Profile Picture</span>
             </div>
 
-            <div class="space-y-8 text-slate-700">
-                <p class="leading-relaxed">
-                    Over 10 years of experience diagnosing inefficiencies and implementing compliance frameworks for global institutions like **PayPal** and **American Express**. I scale operations from pilot stages to 500+ person teams[cite: 25].
+            <div class="content-block">
+                <p>
+                    Management consultant with 10+ years of experience diagnosing operational inefficiencies and implementing compliance frameworks for global institutions like <strong>PayPal</strong> and <strong>American Express</strong>[cite: 5, 10, 16]. 
                 </p>
 
-                <div class="grid grid-cols-2 gap-4">
-                    <div class="p-4 bg-slate-50 rounded-xl">
-                        <h3 class="font-bold text-sm text-blue-600 uppercase mb-1">Scale</h3>
-                        <p class="text-2xl font-bold">40 to 570+</p>
-                        <p class="text-xs text-slate-500">Headcount growth [cite: 25]</p>
+                <div class="stats-grid">
+                    <div class="stat-card">
+                        <h3 class="stat-label">Scale</h3>
+                        <p class="stat-value">40 to 570+</p>
+                        <p class="stat-desc">Headcount growth [cite: 25]</p>
                     </div>
-                    <div class="p-4 bg-slate-50 rounded-xl">
-                        <h3 class="font-bold text-sm text-blue-600 uppercase mb-1">Quality</h3>
-                        <p class="text-2xl font-bold">96%+</p>
-                        <p class="text-xs text-slate-500">Compliance score [cite: 17]</p>
+                    <div class="stat-card">
+                        <h3 class="stat-label">Quality</h3>
+                        <p class="stat-value">96%+</p>
+                        <p class="stat-desc">Compliance score [cite: 17]</p>
                     </div>
                 </div>
 
-                <ul class="space-y-4 pt-4">
-                    <li class="flex items-start">
-                        <span class="mr-3 mt-1 text-blue-600">▹</span>
-                        <span>Designed LATAM incentive frameworks for 150+ employees[cite: 13].</span>
-                    </li>
-                    <li class="flex items-start">
-                        <span class="mr-3 mt-1 text-blue-600">▹</span>
-                        <span>Restructured investigation teams across EMEA and JAPA[cite: 17].</span>
-                    </li>
+                <ul class="bullet-list">
+                    <li>Designed LATAM incentive frameworks for 150+ employees[cite: 13].</li>
+                    <li>Restructured investigation teams across EMEA, JAPA, and LATAM[cite: 17].</li>
+                    <li>Led change management and executive reporting for VPs and Directors[cite: 7, 15].</li>
                 </ul>
                 
-                <a href="mailto:aleksei.mora@gmail.com" class="inline-block bg-blue-600 text-white px-8 py-3 rounded-lg font-bold hover:bg-blue-700 transition mt-8 [cite: 3]">
+                <a href="mailto:aleksei.mora@gmail.com" class="btn-pro">
                     Contact Strategist
                 </a>
             </div>
         </section>
 
-        <section class="side side-author bg-slate-900 text-slate-200 p-8">
-            <header class="mb-12">
-                <span class="text-xs font-bold tracking-[0.3em] text-emerald-400 uppercase">Independent Projects</span>
-                <h2 class="text-5xl serif italic mt-2 text-white">Era Natural</h2>
-                <p class="text-emerald-400 mt-2 serif italic text-xl">The "Semillas" Saga </p>
+        <section class="side side-author">
+            <header class="section-header">
+                <span class="label-emerald">Independent Projects</span>
+                <h2 class="author-title">Era Natural</h2>
+                <p class="author-subtitle">The "Semillas" Saga</p>
             </header>
 
-            <div class="img-placeholder aspect-[2/3] w-full max-w-[280px] mb-8 shadow-2xl">
-                <span class="text-slate-500 text-sm">Book Cover Image</span>
+            <div class="img-placeholder book-cover">
+                <span>Book Cover Image</span>
             </div>
 
-            <div class="space-y-8">
-                <p class="leading-relaxed font-light text-slate-300">
-                    A 139,000-word sci-fi exploration into technology and human nature. I managed this project end-to-end, from the first draft to a global distribution deal[cite: 33, 35].
+            <div class="content-block">
+                <p>
+                    A 139,000-word sci-fi exploration into technology and human nature[cite: 33]. Managed end-to-end, from the first draft to a global distribution deal[cite: 33, 35].
                 </p>
 
-                <div class="border-l-2 border-emerald-500 pl-6 py-2">
-                    <p class="text-sm uppercase tracking-widest text-emerald-400 font-bold mb-2">Crowdfunding Success</p>
-                    <p class="text-3xl font-light">Surpassed goals in <span class="text-emerald-400 font-bold">40%</span> of time[cite: 34].</p>
+                <div class="crowdfund-box">
+                    <p class="label-emerald">Crowdfunding Success</p>
+                    <p class="crowdfund-stat">Goal met in <span class="highlight">40%</span> of time[cite: 34].</p>
                 </div>
 
-                <p class="text-slate-400 text-sm italic">
-                    Currently building a community of readers and organizing promotional forums globally[cite: 36].
+                <p class="author-footer">
+                    Currently building a community of readers and organizing global promotional forums[cite: 36].
                 </p>
 
-                <div class="pt-8">
-                    <a href="#books" class="text-white border-b-2 border-emerald-500 pb-1 font-bold hover:text-emerald-400 transition">
-                        Explore the Universe →
-                    </a>
+                <div class="cta-author">
+                    <a href="#">Explore the Universe →</a>
                 </div>
             </div>
         </section>
