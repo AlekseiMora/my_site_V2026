@@ -103,7 +103,8 @@ body {
 .profile-img-container {
     border: 2px dashed #cbd5e1;
     display: flex;
-    max-width:5rem
+    width: 15rem;
+    radious:7.5rem;
     align-items: center;
     justify-content: center;
     border-radius: 1rem;
