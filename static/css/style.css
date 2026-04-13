@@ -134,8 +134,7 @@ profile-img {
     
     /* 1. Espacio 3D y perspectiva */
     perspective: 1200px; 
-    cursor: pointer; /* Muestra la mano en laptop */
-    -webkit-tap-highlight-color: transparent;
+    
     background-image: url('../../static/images/EraNatural_BookBackCover.jpg');
     background-size: cover;
     background-position: center;
@@ -153,6 +152,9 @@ profile-img {
     transition: transform 1s ease-in-out;
     transform-origin: left center; /* Eje en el "lomo" del libro */
     backface-visibility: hidden;   /* Se vuelve invisible al girar */
+
+    cursor: pointer; /* Muestra la mano en laptop */
+    -webkit-tap-highlight-color: transparent;
     
     /* Asegura que la portada esté sobre la contraportada al inicio */
     position: relative;
