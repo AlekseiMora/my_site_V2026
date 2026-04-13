@@ -134,7 +134,8 @@ profile-img {
     
     /* 1. Espacio 3D y perspectiva */
     perspective: 1200px; 
-    
+    cursor: pointer; /* Muestra la mano en laptop */
+    -webkit-tap-highlight-color: transparent;
     background-image: url('../../static/images/EraNatural_BookBackCover.jpg');
     background-size: cover;
     background-position: center;
