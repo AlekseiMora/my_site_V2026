@@ -129,13 +129,12 @@ profile-img {
     aspect-ratio: 2/3;
     margin-left: auto;
     margin-right: auto;
-    max-width: 280px;
+    width: clamp(250px, 85vw, 350px);
     position: relative;
     
     /* 1. Espacio 3D y perspectiva */
     perspective: 1200px; 
     
-    /* 2. Colocamos tu contraportada como fondo del contenedor */
     background-image: url('../../static/images/EraNatural_BookBackCover.jpg');
     background-size: cover;
     background-position: center;
