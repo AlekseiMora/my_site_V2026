@@ -159,9 +159,8 @@ profile-img {
 }
 
 /* 4. La animación al pasar el cursor */
-.book-cover:hover img {
-    /* Abre la portada hacia la izquierda */
-    transform: rotateY(-130deg); 
+.book-cover.is-flipped img {
+    transform: rotateY(-130deg);
 }
 
 /* Opcional: un sutil brillo en la contraportada al abrirse */
