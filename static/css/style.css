@@ -189,3 +189,38 @@ profile-img {
     color: var(--emerald-accent);
     font-weight: 700;
 }
+/* Estilo común para links sociales */
+.social-links-pro, .social-links-author {
+    margin-top: 1.5rem;
+    display: flex;
+    gap: 1rem;
+}
+
+.social-links-pro a, .social-links-author a {
+    font-size: 0.85rem;
+    text-decoration: none;
+    font-weight: 600;
+    transition: opacity 0.2s;
+}
+
+/* Específicos del Consultor */
+.social-links-pro a {
+    color: var(--pro-blue);
+    border-bottom: 2px solid transparent;
+}
+.social-links-pro a:hover {
+    border-bottom: 2px solid var(--pro-blue);
+}
+
+/* Específicos del Autor (Marketing Digital) */
+.social-links-author a {
+    color: var(--emerald-accent);
+    padding: 0.4rem 0.8rem;
+    border: 1px solid var(--emerald-accent);
+    border-radius: 4px;
+}
+.social-links-author a:hover {
+    background: var(--emerald-accent);
+    color: var(--author-bg);
+}
+
